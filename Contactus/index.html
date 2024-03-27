@@ -10,7 +10,7 @@
     <style>
 
         body{
-            width: 60%;
+            width: 75%;
             text-align: center;
             margin: auto;
         }
@@ -43,7 +43,28 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        
+        #register{
+            color: red;
+            margin-left: -80%;
+            
+        }
+
+        .bottom{
+            display: flex;
+            align-items: start;
+        }
+
+        .bottom div img{
+            width: 20px;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        .bottom div p{
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            text-align: left;
+        }
 
 
     </style>
@@ -69,6 +90,21 @@
     </div>
 
     <hr style="margin-top: 3rem; color: grey;">
+
+    <div class="bottom">
+        <div class="img">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+
+        <div>
+            <p>In case of any queries you may have about Masai,we organise a Q&A session every Tuesday & Friday 5-6 PM. Register below and join the link on time to get your doubt cleared by our Admission Couselling Team</p>
+        </div>
+
+    </div>
+
+    <p id="register">CLICK HERE TO REGISTER</p>
+
+    
     
     
 </body>
