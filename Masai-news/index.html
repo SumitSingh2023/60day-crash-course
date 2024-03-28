@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai News</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+            
+        }
+        .heading{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .head-text{
+            font-family: sans-serif;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .card-cont{
+            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .card{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 10px;
+        }
+
+        .card div img{
+            width: 100%;
+            height: 200px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 25px;
+            
+        }
+
+        .date{
+            color: blue;
+            padding-left: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .title{
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .text{
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 11px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(105, 104, 104);
+        }
+        
+
+        @media only screen and (min-width: 1200px) {
+            .card-cont{
+            
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 15px;
+                width: 80%;
+                margin: auto;
+            }
+
+        }
+
+        @media only screen and (min-width: 992px) {
+            .card-cont{
+            
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 15px;
+                width: 80%;
+                margin: auto;
+            }
+
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            .card-cont{
+            
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 15px;
+                width: 80%;
+                margin: auto;
+            }
+
+        }
+
+        @media only screen and (min-width: 600px) {
+            .card-cont{
+            
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 15px;
+                width: 80%;
+                margin: auto;
+            }
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .card-cont{
+            
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 15px;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Newsroom</h1>
+        <p class="head-text">We are often covered in the news, for all the right reasons. Learn all about our success stories, placement updates, investment and acquisition announcements, future roadmap and more in our press coverage.</p>
+
+        <div class="card-cont">
+
+            <div class="card">
+                <div>
+                    <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg" alt="">
+                </div>
+                
+                <div class="date">
+                    <p >28 Aug 2023</p>
+
+                </div>
+                
+                <div class="title">
+                    <h3>Empowering Education Through GenAI</h3>
+                </div>
+                
+                <div class="text">
+                    <p>In the dynamic landscape of today’s job market, Gen AI plays a significant ...</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thungy_1_420b226e5b.webp" alt="">
+                </div>
+                
+                <div class="date">
+                    <p >05 May 2023</p>
+
+                </div>
+                
+                <div class="title">
+                    <h3>Masai School targets fivefold revenue growth in three years</h3>
+                </div>
+                
+                <div class="text">
+                    <p>Masai School's growth plans indicate that the demand for skilled workers in...</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thingy_2_f2c52e6fcf.webp" alt="">
+                </div>
+                
+                <div class="date">
+                    <p >25 May 2023</p>
+
+                </div>
+                
+                <div class="title">
+                    <h3>Beyond Degrees: Embracing Alternative Credentialing and Micro-learning in Tech Recruitment</h3>
+                </div>
+                
+                <div class="text">
+                    <p>The enduring presence of alternative credentialing and microlearning indica...</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
