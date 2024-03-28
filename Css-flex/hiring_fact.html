@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        #heading{
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+        }
+        #parent{
+            width: 750px;
+            height: 180px;
+           
+            margin: auto;
+            
+            display: flex;
+            background-color: rgb(189, 201, 224);
+            border-radius: 10px;
+        }
+        .child{
+            height: 130px;
+            width: 130px;
+           
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .logo{
+            height: auto;
+            width: 100%;
+           
+        }
+        .logo>img{
+            width: 40px;
+            height: 32px;
+            padding-left: 30%;
+            padding-top: 8px;
+            padding-bottom: 5px;
+        }
+        .detail{
+            height: auto;
+            width: 100%;
+            
+            font-size: 15px;
+            text-align: center;
+            padding-top: 6px;
+            padding-bottom: 15px;
+            color: rgb(51, 50, 50);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+            
+        }
+        .data{
+            height: auto;
+            width: 100%;
+            
+            text-align: center;
+            color: blue;
+            font-size: 13px;
+            padding-top: 7px;
+            padding-bottom: 18px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h2>Hiring Facts</h2>
+    </div>
+    <div id="parent">
+        <div class="child">
+            <div class="logo">
+                <img src="https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-1.svg" alt="logo">
+            </div>
+            <div class="detail">
+                <p>Hiring Process</p>
+            </div>
+            <div class="data">
+                <strong>&lt; 3 Days</strong>
+            </div>
+        </div>
+        <div class="child">
+            <div class="logo">
+                <img src="https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-2.svg" alt="logo">
+            </div>
+            <div class="detail">
+                <p>Offer Acceptance</p>
+            </div>
+            <div class="data">
+                <strong>&lt; 90%</strong>
+            </div>
+        </div>
+        <div class="child">
+            <div class="logo">
+                <img src="https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-3.svg" alt="logo">
+            </div>
+            <div class="detail">
+                <p>Retention Rate</p>
+            </div>
+            <div class="data">
+                <strong>&lt; 93%</strong>
+            </div>
+        </div>
+        <div class="child">
+            <div class="logo">
+                <img src="https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-4.svg" alt="logo">
+            </div>
+            <div class="detail">
+                <p>Hiring Partners</p>
+            </div>
+            <div class="data">
+                <strong>&lt; 4000+</strong>
+            </div>
+        </div>
+        <div class="child">
+            <div class="logo">
+                <img src="https://www.masaischool.com/images/hire-masai-grads/HiringFacts/hiring-facts-5.svg" alt="logo">
+            </div>
+            <div class="detail">
+                <p>Year Round Availability</p>
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>
