@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aqua;
+    background-color: #333333;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #444444;
+    
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+section div img{
+    width: 120px;
+    margin-left: 2rem;
+    border-radius: 10px;
+    
+}
+
+section{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.text p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.select{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-style: none;
+    border-color: white;
+}
+
+
+
+@media all and (max-width:1400px) and (min-width:761px){
+    .select{
+        display: none;
+    }
+}
+
+@media all and (max-width:760px) and (min-width:0px){
+    section{
+        display: block;
+        text-align: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .select{
+        display: block;
+        background-color: #444444;
+        padding: 10px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        color: white;
+    }
+}
