@@ -1,0 +1,128 @@
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+}
+
+.top-logo{
+    display: flex;
+}
+
+.logo-card img{
+    width: 100%;
+}
+
+.card-container{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    
+}
+
+.card{
+    text-align: center;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.card .image img{
+    width: 99%;
+    height: 60%;
+    margin-top: 5px;
+    
+}
+
+.card .name h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card .founder p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin: 0px;
+    margin-bottom: 5px;
+    
+}
+
+.card .brand-logo img{
+    width: 100px;
+}
+
+@media all and (max-width:760px) and (min-width:0px){
+    .top-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .logo-card img{
+        width: 80%;
+        margin-left: 30px;
+       
+        
+    }
+    
+    
+}
+
+@media all and (max-width:1400px) and (min-width:861px){
+    .card-container{
+    
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 10px;
+        
+    }
+    
+}
+
+@media all and (max-width:860px) and (min-width:550px){
+    .card-container{
+    
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 10px;
+        
+    }
+    
+}
+
+@media all and (max-width:549px) and (min-width:280px){
+    .card-container{
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 10px;
+        
+    }
+    
+}
+
+@media all and (max-width:279px) and (min-width:0px){
+    .card-container{
+    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 10px;
+        
+    }
+    
+}
