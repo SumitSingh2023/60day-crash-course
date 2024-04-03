@@ -18,3 +18,5 @@ function checkprime(num){
 }
 
 checkprime(10)
+
+
