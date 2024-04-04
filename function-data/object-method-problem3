@@ -1,0 +1,76 @@
+// function calculateSalesTotals(sales) {
+//     let updatedSales = []; 
+  
+//     for (let i = 0; i < sales.length; i++) {
+//       let item = sales[i];
+//       let discount = item.discount || 0;
+//       let salePrice = item.original * (1 - discount);
+//       let total = item.stock * salePrice;
+      
+//       let updatedItem = {
+//         discount: item.discount || 0,
+//         item: item.item,
+//         original: item.original,
+//         sale: salePrice .toFixed(3),
+//         stock: item.stock,
+//         total: total .toFixed(3),
+//       };
+  
+//       updatedSales.push(updatedItem);
+//     }
+  
+//     return updatedSales;
+//   }
+  
+//   // Sample input
+//   let sales = [
+//     { item: 'PS4 Pro', stock: 3, original: 399.99 },
+//     { item: 'Xbox One X', stock: 1, original: 499.99, discount: 0.1 },
+//     { item: 'Nintendo Switch', stock: 4, original: 299.99 },
+//     { item: 'PS2 Console', stock: 1, original: 299.99, discount: 0.8 },
+//     { item: 'Nintendo 64', stock: 2, original: 199.99, discount: 0.65 }
+//   ];
+  
+//   // Calculate sales totals
+//   let updatedSale = calculateSalesTotals(sales);
+//   console.log(updatedSale);
+  
+
+
+//SAMPLE INPUT :
+
+var sales = [
+  { item: 'PS4 Pro', stock: 3, original: 399.99 },
+  { item: 'Xbox One X', stock: 1, original: 499.99, discount: 0.1 },
+  { item: 'Nintendo Switch', stock: 4, original: 299.99 },
+  { item: 'PS2 Console', stock: 1, original: 299.99, discount: 0.8 },
+  { item: 'Nintendo 64', stock: 2, original: 199.99, discount: 0.65 }
+];
+
+function calculateSalesTotals(){
+    let updateSale=[]
+
+    for(let i=0;i<sales.length;i++){
+        let discount=sales[i].discount ||0
+        let item=sales[i]
+        let salePrice=item.original * (1 - discount)
+        let original=sales[i].original
+        let total=item.stock * salePrice;
+
+        let itemObj={
+            discount:item.discount || 0,
+            item:item.item,
+            original:item.original,
+            sale:salePrice .toFixed(3),
+            stock: item.stock,
+            total: total .toFixed(3),
+        }
+        updateSale.push(itemObj)
+    }
+    
+    return updateSale
+    
+}
+
+let output =calculateSalesTotals(sales)
+console.log(output)
