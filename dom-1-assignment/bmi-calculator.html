@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CalculatorS</title>
+    <style>
+        #cont{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cont"></div>
+
+</body>
+
+<script>
+
+    let div= document.getElementById("cont")
+
+    let heading= document.createElement("h1")
+    heading.innerText="Check your BMI"
+
+    let head2=document.createElement("h4")
+    head2.innerText="Enter your weight and height below to check your BMI results"
+
+    let inputheading1=document.createElement("h2")
+    inputheading1.innerText="Put your weight in here (kg)"
+
+    let inputfeild1=document.createElement("input")
+    inputfeild1.setAttribute("type","text")
+    inputfeild1.placeholder="Enter weight in kg"
+
+    let inputheading2=document.createElement("h2")
+    inputheading2.innerText="Put your height in here (m)"
+
+    let inputfeild2=document.createElement("input")
+    inputfeild2.setAttribute("type","text")
+    inputfeild2.placeholder="Enter height in meter"
+
+    let btn=document.createElement("button")
+    btn.innerText="Calculate Your BMI"
+
+     let output=document.createElement("p")
+    
+    
+    btn.addEventListener("click" ,()=>{
+        let weight=inputfeild1.value
+        let height=inputfeild2.value
+
+        let Bmi = (weight / (height*height)).toFixed(2)
+
+        if(Bmi<=18.4){
+            output.innerText=`Your BMI is ${Bmi} which means You are UnderWeight`
+        }else if(Bmi >= 18.5 && Bmi <= 24.9){
+            output.innerText=`Your BMI is ${Bmi} which means You are NormalWeight`
+        }else if(Bmi >=25 && Bmi <=29.9){
+            output.innerText=`Your BMI is ${Bmi} which means You are OverWeight`
+        }else if(Bmi >=30){
+            output.innerText=`Your BMI is ${Bmi} which means You are Obese`
+        }
+
+    })
+
+    div.append(heading,head2,inputheading1,inputfeild1,inputheading2,inputfeild2,btn,output)
+
+    inputfeild1.style.width="40%"
+    inputfeild1.style.marginLeft="30%"
+
+    inputfeild2.style.width="40%"
+    inputfeild2.style.marginLeft="30%"
+    inputfeild2.style.marginBottom="20px"
+
+    btn.style.padding="10px"
+
+</script>
+</html>
