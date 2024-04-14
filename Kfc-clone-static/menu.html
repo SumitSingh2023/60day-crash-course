@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC | Menu</title>
+    <link rel="icon" type="image/x-icon" href="https://pngimg.com/uploads/kfc/small/kfc_PNG44.png">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div class="cont">
+        <header>
+            <div class="nav" style="position: fixed;top: 0px;">
+                <div class="left-nav">
+                    <div>
+                        <a href="#">
+                            <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./menu.html">Menu</a>
+                    </div>
+                    <div>
+                        <a href="#">Deals</a>
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <div class="sign">
+                        <div class="sign-logo">
+                            <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg"
+                                alt="">
+                        </div>
+
+                        <a href="./signin.html">Sign In</a>
+                        <span style="color: grey; margin-left: 1rem;">|</span>
+
+                    </div>
+
+                    <div class="bag">
+                        <div class="rupee">₹0</div>
+                        <div class="bag-img">
+                            <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mini-nav" style="margin-top: 99px;">
+                <div class="mini-nav-text">
+                    <p>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</p>
+                </div>
+                <div class="mini-nav-button">
+                    <button>Start Order</button>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="left-sec">
+                <div class="offer-icon">
+                    <div class="red-block"></div>
+                    <div class="red-block"></div>
+                    <div class="red-block"></div>
+                </div>
+                <div class="kfc-menu-head">
+                    <h3>KFC MENU</h3>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>PERI PERI CHICKEN</li>
+                        <li>VALUE SNACKERS</li>
+                        <li>CHICKEN ROLLS</li>
+                        <li>CHICKEN BUCKETS</li>
+                        <li>BIRYANI BUCKETS</li>
+                        <li>BOX MEALS</li>
+                        <li>BURGERS</li>
+                        <li>SNACKS</li>
+                        <li>BEVERAGES</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-sec">
+                <div class="menu-search">
+                    <div>
+                        <input class="menu-input" id="search-input" type="text" placeholder="Search our menu">
+                    </div>
+                    <button id="search">
+                        <img src="https://online.kfc.co.in/static/media/searchIcon.0e00b33c.svg" alt="">
+                    </button>
+                </div>
+                <hr style="border: 1px solid black; margin-bottom: 50px;">
+
+                <div class="product-menu">
+                    <div id="product-cont"></div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+    </div>
+</body>
+<script src="menu.js"></script>
+
+</html>

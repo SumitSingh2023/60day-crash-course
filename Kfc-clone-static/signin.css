@@ -1,0 +1,122 @@
+.container{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    height: auto;
+    box-shadow: rgba(255, 230, 10, 0.299) 0px 0px 0px 2px, rgba(6, 99, 205, 0.45) 0px 4px 6px -1px, rgba(240, 14, 14, 0.08) 0px 1px 0px inset;
+    border-radius: 3px;
+
+}
+
+.mini-cont{
+    margin-left: 30px;
+}
+
+.kfc-logo{
+    margin: auto;
+    
+}
+
+.signin{
+    font-size: 30px;
+    color:rgb(80, 77, 77);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.kfc-logo img{
+    width: 50%;
+   
+    border-radius: 50%;
+    margin: auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.logo div img{
+    padding-right: 10px;
+}
+
+.input div input{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-style: none;
+    padding-right: 50px;
+    margin-bottom: 15px;
+    box-shadow: rgba(21, 184, 59, 0.3) 0px 0px 5px 0px, rgba(230, 11, 33, 0.1) 0px 0px 1px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.input div input:hover{
+    background-color: rgb(225, 224, 224);
+}
+
+input[type="text"]::placeholder {
+    color: rgb(229, 27, 27); 
+    
+}
+
+
+.btn{
+    background-color: rgb(41, 170, 71);
+    font-size: 20px;
+    border-style: none;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 300px;
+    padding: 10px 10px;
+    color: white;
+    
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.remember-forgot :nth-child(1){
+    color: rgb(11, 129, 62);
+    font-family: 700;
+}
+
+.bottom{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.signup a {
+  margin-left: 10px;
+  color: rgb(6, 164, 6);
+  font-weight: 700;
+  text-decoration: none;
+}
